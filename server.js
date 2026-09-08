@@ -101,13 +101,12 @@ app.use((err, req, res, next) => {
 // Start server
 // --------------------------------------------------
 
-const PORT =
-    process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
 
     console.log(
-        `AgriLink AI Backend running on http://localhost:${PORT}`
+        `AgriLink AI Backend running on port ${PORT}`
     );
 
 });
